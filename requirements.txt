@@ -1,0 +1,10 @@
+langchain
+numpy
+streamlit
+python-dotenv
+PyPDF2
+transformers
+sentence-transformers
+llama-cpp-python
+pandas 
+-e . 
