@@ -65,7 +65,12 @@ By leveraging Mixtral, our MCQ Generator can create high-quality, diverse, and c
 
 1. Upload a text file (TXT) or a PDF document containing the content for which MCQs need to be generated.
 2. Select the desired number of questions and their difficulty level (Simple, Medium, or Tough).
-3. Click on the "Generate Questions" button to obtain the generated MCQs.
+3. Click on the "Generate Questions" button to 
+
+https://github.com/UjjTiw/mcqgen/assets/99402799/0e246e57-78f3-4edc-b0db-9de3a19bff90
+
+obtain the generated MCQs.
+
 
 ## Contributing
 
