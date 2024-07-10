@@ -32,14 +32,4 @@ Multi-head attention, allows the model to jointly attend to information from dif
 
 A self-attention layer connects all positions with a constant number of sequentially executed operations, whereas a recurrent layer requires O(n) sequential operations.
 
-In terms of computational complexity, self-attention layers are faster than recurrent layers when the sequence length is smaller than the representation dimensionality, which is often the case with machine translations.
-
-Key Takeaways
-This work introduces Transformer, a novel sequence transduction model based entirely on attention mechanism.
-It replaces the recurrent layers most commonly used in encoder-decoder architectures with multi-headed self-attention.
-Transformer can be trained significantly faster than architectures based on recurrent or convolutional layers for translation tasks.
-On both WMT 2014 English-to-German and WMT 2014 English-to-French translation tasks, the model achieves a new state of the art.  In the former task the model outperforms all previously reported ensembles.
-Future Goals
-Transformer has only been applied to transduction model tasks as of yet. In the near future, the authors plan to use it for other problems involving input and output modalities other than text. They plan to apply attention mechanisms to efficiently handle large inputs and outputs such as images, audio and video.
-
-The Transformer architecture from this paper has gained major traction since its release because of major improvements in translation quality and other NLP tasks. Recently, the NLP research group at Harvard have released a post which presents an annotated version of the paper in the form of a line-by-line implementation. It is accompanied with 400 lines of library code, written in PyTorch in the form of a notebook, accessible from github or on Google Colab with free GPUs.
+In terms of computational complexity, self-attention layers are faster than recurrent layers when the sequence length is smaller than the representation dimensionality, which is often the case with machine translations

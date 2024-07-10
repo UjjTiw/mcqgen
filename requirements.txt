@@ -1,6 +1,7 @@
 langchain
+langchain_community
 numpy
-streamlit
+streamlit=1.29.0
 python-dotenv
 PyPDF2
 transformers

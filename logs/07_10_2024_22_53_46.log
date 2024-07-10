@@ -1,0 +1,108 @@
+[2024-07-10 22:54:03,761] 56 root - ERROR - Error occurred
+Traceback (most recent call last):
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/huggingface_hub/utils/_errors.py", line 304, in hf_raise_for_status
+    response.raise_for_status()
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/streamlitapp.py", line 45, in <module>
+    response = generate_evaluate_chain(
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain_core/_api/deprecation.py", line 168, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain/chains/base.py", line 383, in __call__
+    return self.invoke(
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain/chains/base.py", line 166, in invoke
+    raise e
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain/chains/base.py", line 156, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain/chains/sequential.py", line 106, in _call
+    outputs = chain(known_values, return_only_outputs=True, callbacks=callbacks)
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain_core/_api/deprecation.py", line 168, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain/chains/base.py", line 383, in __call__
+    return self.invoke(
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain/chains/base.py", line 166, in invoke
+    raise e
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain/chains/base.py", line 156, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain/chains/llm.py", line 128, in _call
+    response = self.generate([inputs], run_manager=run_manager)
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain/chains/llm.py", line 140, in generate
+    return self.llm.generate_prompt(
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain_core/language_models/llms.py", line 703, in generate_prompt
+    return self.generate(prompt_strings, stop=stop, callbacks=callbacks, **kwargs)
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain_core/language_models/llms.py", line 882, in generate
+    output = self._generate_helper(
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain_core/language_models/llms.py", line 740, in _generate_helper
+    raise e
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain_core/language_models/llms.py", line 727, in _generate_helper
+    self._generate(
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain_core/language_models/llms.py", line 1431, in _generate
+    self._call(prompt, stop=stop, run_manager=run_manager, **kwargs)
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain_community/llms/huggingface_hub.py", line 139, in _call
+    response = self.client.post(
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/huggingface_hub/inference/_client.py", line 273, in post
+    hf_raise_for_status(response)
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/huggingface_hub/utils/_errors.py", line 371, in hf_raise_for_status
+    raise HfHubHTTPError(str(e), response=response) from e
+huggingface_hub.utils._errors.HfHubHTTPError: 429 Client Error: Too Many Requests for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1 (Request ID: rwmP4Cbq-fVEhSXXHKN6b)
+
+Model is overloaded
+[2024-07-10 22:55:57,092] 56 root - ERROR - Error occurred
+Traceback (most recent call last):
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/huggingface_hub/utils/_errors.py", line 304, in hf_raise_for_status
+    response.raise_for_status()
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/streamlitapp.py", line 45, in <module>
+    response = generate_evaluate_chain(
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain_core/_api/deprecation.py", line 168, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain/chains/base.py", line 383, in __call__
+    return self.invoke(
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain/chains/base.py", line 166, in invoke
+    raise e
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain/chains/base.py", line 156, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain/chains/sequential.py", line 106, in _call
+    outputs = chain(known_values, return_only_outputs=True, callbacks=callbacks)
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain_core/_api/deprecation.py", line 168, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain/chains/base.py", line 383, in __call__
+    return self.invoke(
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain/chains/base.py", line 166, in invoke
+    raise e
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain/chains/base.py", line 156, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain/chains/llm.py", line 128, in _call
+    response = self.generate([inputs], run_manager=run_manager)
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain/chains/llm.py", line 140, in generate
+    return self.llm.generate_prompt(
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain_core/language_models/llms.py", line 703, in generate_prompt
+    return self.generate(prompt_strings, stop=stop, callbacks=callbacks, **kwargs)
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain_core/language_models/llms.py", line 882, in generate
+    output = self._generate_helper(
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain_core/language_models/llms.py", line 740, in _generate_helper
+    raise e
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain_core/language_models/llms.py", line 727, in _generate_helper
+    self._generate(
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain_core/language_models/llms.py", line 1431, in _generate
+    self._call(prompt, stop=stop, run_manager=run_manager, **kwargs)
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/langchain_community/llms/huggingface_hub.py", line 139, in _call
+    response = self.client.post(
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/huggingface_hub/inference/_client.py", line 273, in post
+    hf_raise_for_status(response)
+  File "/Users/ujjwaltiwari/Desktop/projects/MCQGen/mcqenv/lib/python3.9/site-packages/huggingface_hub/utils/_errors.py", line 371, in hf_raise_for_status
+    raise HfHubHTTPError(str(e), response=response) from e
+huggingface_hub.utils._errors.HfHubHTTPError: 429 Client Error: Too Many Requests for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1 (Request ID: HJIQ_rICAKi9SmiwQiVLB)
+
+Model is overloaded
